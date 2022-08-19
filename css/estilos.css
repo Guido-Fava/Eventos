@@ -1,0 +1,19 @@
+
+body {
+    background-color: white;
+    font-family:  Helvetica;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cambiarcolor {
+    background-color: gray !important;
+}
+
+.listar{
+    background-color: gray;
+}
+
+.agregar{
+    background-color: grey;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <title>Eventos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/variables.js"></script>
+    <script src="js/producto.class.js"></script>
+    <script defer src="js/arrayproductos.js"></script>
+    <script defer src="js/eventos.js"></script>
+</head>
+<body data-theme="dark">
+    <article class="container">
+        <h1>Tablas</h1>
+        <div>
+            <input type="number" id="codigo" placeholder="Código" >
+            <input type="text" id="descripcion" placeholder="Descripción del producto">
+            <input type="number" id="importe" placeholder="Importe">
+            <br><br>
+            <button class="button button-outline">cargar</button>
+        </div>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>DESCRIPCION</th>
+                    <th>IMPORTE</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpo">
+                <tr>
+                    <td>1</td>
+                    <td>Tabla gastronomica chica</td>
+                    <td>999</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tabla gastronomica mediana</td>
+                    <td>1699</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Tabla gastronomica grande</td>
+                    <td>1999</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Juego de tablas de sushi</td>
+                    <td>3499</td>
+                </tr>
+            </thead>
+        </table>
+        <footer>
+            <button role="button" class="primary" id="listar" onclick="listarProductos()">Listar</button>
+            <button role="button" class="secondary" id="agregar" onclick="agregarProducto()">Agregar</button>
+        </footer>
+    </article>
+</body>
+</html>
